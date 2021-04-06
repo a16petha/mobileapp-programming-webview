@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
         WebSettings webSettings = myWebView.getSettings();
         webSettings.setJavaScriptEnabled(true);
         //Loads a page to mywebview
-        myWebView.loadUrl("https://www.his.se");
+        myWebView.loadUrl("file:///android_asset/about.html");
     }
 
     @Override
@@ -117,7 +117,7 @@ public class MainActivity extends AppCompatActivity {
 
         if (id == R.id.action_internal_web) {
             Log.d("==>","Will display internal web page");
-
+            showInternalWebPage();
             return true;
 
         }
