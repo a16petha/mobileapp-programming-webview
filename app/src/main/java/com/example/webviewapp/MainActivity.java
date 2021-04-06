@@ -22,20 +22,25 @@ public class MainActivity extends AppCompatActivity {
 
 
     public void showExternalWebPage(){
-        // TODO: Add your code for showing external web page here
+
+        //Instantiate my WebView
         WebView myWebView = findViewById(R.id.my_webview);
+        //Enable Javascript
         WebSettings webSettings = myWebView.getSettings();
         webSettings.setJavaScriptEnabled(true);
+        //Loads a page to mywebview
         myWebView.loadUrl("https://www.his.se");
 
     }
 
     public void showInternalWebPage(){
-        // TODO: Add your code for showing internal web page here
 
+        //Instantiate my WebView
         WebView myWebView = findViewById(R.id.my_webview);
+        //Enable Javascript
         WebSettings webSettings = myWebView.getSettings();
         webSettings.setJavaScriptEnabled(true);
+        //Loads a page to mywebview
         myWebView.loadUrl("https://www.his.se");
     }
 
