@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
         //Enable Javascript
         WebSettings webSettings = myWebView.getSettings();
         webSettings.setJavaScriptEnabled(true);
-        //Loads a page to mywebview
+        //Loads an external page to mywebview
         myWebView.loadUrl("https://www.his.se");
 
     }
@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
         //Enable Javascript
         WebSettings webSettings = myWebView.getSettings();
         webSettings.setJavaScriptEnabled(true);
-        //Loads a page to mywebview
+        //Loads an html page to mywebview
         myWebView.loadUrl("file:///android_asset/about.html");
     }
 
@@ -51,10 +51,8 @@ public class MainActivity extends AppCompatActivity {
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-       //WebViewClient myWebViewClient = new WebViewClient();
-       //setContentView(myWebView);
-       //WebView myWebView = findViewById(R.id.my_webview);
-       //WebSettings webSettings = myWebView.getSettings();
+        WebView myWebView = findViewById(R.id.my_webview);
+        WebSettings webSettings = myWebView.getSettings();
 
 
 
